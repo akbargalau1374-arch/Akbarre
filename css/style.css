@@ -74,6 +74,7 @@ body {
 .navbar .navbar-extra a {
   color: #fff;
   margin: 0 0.5rem;
+  position: relative;
 }
 
 .navbar .navbar-extra a:hover {
@@ -129,6 +130,7 @@ body {
   color: var(--bg);
   background-color: #fff;
   transition: 0.3s;
+  overflow-y: auto;
 }
 
 .shopping-cart.active {
@@ -491,7 +493,7 @@ footer .credit a {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-container {
@@ -536,9 +538,15 @@ footer .credit a {
   padding: 1rem 1.6rem;
 }
 
+.modal-content .product-stars {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: var(--mycolor);
+}
 
-
-
+.modal-content .product-stars .star-full {
+  fill: var(--mycolor);
+}
 
 /* media queries */
 /* laptop */

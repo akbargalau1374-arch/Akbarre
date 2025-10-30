@@ -47,29 +47,11 @@
 
 <!-- shopping card start -->
  <div class="shopping-cart">
-  <div class="cart-item">
-    <img src="img/produk1.png" alt="Product 1">
-    <div class="item-ditail">
-      <h3>Jpg Le Male Le Parfume</h3>
-      <div class="item-price">IDR 2,300K</div>
-    </div>
-    <i data-feather="trash-2" class="remove-item"></i>
+  <div class="empty-cart-message">
+    Tidak ada barang di keranjang...
   </div>
-  <div class="cart-item">
-    <img src="img/produk2.jpg" alt="Product 1">
-    <div class="item-ditail">
-      <h3>Jpg le Male Elixir</h3>
-      <div class="item-price">IDR 2,500K</div>
-    </div>
-    <i data-feather="trash-2" class="remove-item"></i>
-  </div>
-  <div class="cart-item">
-    <img src="img/produk3.jpg" alt="Product 1">
-    <div class="item-ditail">
-      <h3>Jpg Le Beau Paradise G.</h3>
-      <div class="item-price">IDR 2,300K</div>
-    </div>
-    <i data-feather="trash-2" class="remove-item"></i>
+  <div class="cart-subtotal">
+    Subtotal: IDR 0K
   </div>
  </div>
 <!-- shopping card end -->
@@ -103,12 +85,27 @@
           <h3>Kenapa memilih pafume di kami?</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex qui
-            eaque laudantium voluptate delectus est!
+            eaque laudantium voluptate delectus est! Pariatur, quae. Quisquam
+            voluptatum, quod, quia, voluptates quas quibusdam accusantium
+            doloremque repellendus nemo dolorum.
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
             dolorem eligendi fugiat voluptatibus magnam natus, molestias aut
-            perferendis et praesentium.
+            perferendis et praesentium. Quisquam, quod, quia, voluptates quas
+            quibusdam accusantium doloremque repellendus nemo dolorum.
+          </p>
+          <p>
+            Atque, voluptatum. Quisquam, quod, quia, voluptates quas quibusdam
+            accusantium doloremque repellendus nemo dolorum. Pariatur, quae.
+            Quisquam voluptatum, quod, quia, voluptates quas quibusdam
+            accusantium doloremque repellendus nemo dolorum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui
+            eaque laudantium voluptate delectus est! Pariatur, quae. Quisquam
+            voluptatum, quod, quia, voluptates quas quibusdam accusantium
+            doloremque repellendus nemo dolorum.
           </p>
         </div>
       </div>
@@ -246,28 +243,21 @@
       </p>
 
       <div class="row">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.142145291604!2d112.59058330141438!3d-7.978643313835137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Kota%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1761757737303!5m2!1sid!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="maps"
-        ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63219.142145291604!2d112.59058330141438!3d-7.978643313835137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Kota%20Malang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1761831995649!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
 
         <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
+            <input type="text" value="M Zainul Akbar" class="nama-input" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+            <input type="text" value="akbargalau1374@gmail.com" class="email-input" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
+            <input type="text" value="087891444844" class="phone-input" />
           </div>
-          <button type="submit" class="btn">kirim pesan</button>
         </form>
       </div>
     </section>
@@ -276,8 +266,8 @@
     <!-- footer strat -->
     <footer>
       <div class="social">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="https://www.instagram.com/akbrree__/"><i data-feather="instagram"></i></a>
+        <a href="https://wa.me/qr/LVFQP75D2D7XG1"><i data-feather="message-circle"></i></a>
         <a href="#"><i data-feather="facebook"></i></a>
       </div>
 
