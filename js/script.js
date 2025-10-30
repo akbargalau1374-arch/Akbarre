@@ -1,15 +1,56 @@
-// toggle class active
-const navbarNav = document.querySelector('.navbar-nav');
+// toggle class active hamburger menu
+const navbarNav = document.querySelector(".navbar-nav");
+
 // ketika hamburger menu di klik
-document.querySelector('#hamburger-menu').onclick = () => {
-    navbarNav.classList.toggle('active');
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
 };
 
-//klik di luar slidebar untuk menghilangkan nav
-const hamburger = document.querySelector('#hamburger-menu');
+// toggle class active search form
+const searchForm = document.querySelector(".search-form");
+const searchBox = document.querySelector("#search-box");
+const searchButton = document.querySelector("#search-button");
 
-document.addEventListener('click',function(e) {
-    if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
-        navbarNav.classList.remove('active');
-    }
+searchButton.onclick = (e) => {
+  searchForm.classList.toggle("active");
+  searchBox.focus();
+  e.preventDefault();
+};
+
+//toggle class active untuk shopping card
+const shoppingCart = document.querySelector(".shopping-cart");
+document.querySelector("#shopping-cart-button").onclick = (e) => {
+  e.preventDefault();
+  shoppingCart.classList.toggle("active");
+};
+
+//klik di luar elemen
+const hm = document.querySelector("#hamburger-menu");
+const sb = document.querySelector("#search-button");
+const sc = document.querySelector("#shopping-cart-button");
+
+document.addEventListener("click", function (e) {
+  if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+  if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
+    searchForm.classList.remove("active");
+  }
+
+  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
+    shoppingCart.classList.remove("active");
+  }
 });
+
+
+// modal box
+const itemDetailModal = document.querySelector('#item-detail-modal');
+const itemDetailButton = document.querySelector('.item-detail-button');
+
+itemDetailButton.onclick = (e) => {
+  itemDetailButton.style.display = 'flex';
+  e.preventDefault(); 
+};
+
+
+
